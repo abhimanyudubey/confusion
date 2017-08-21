@@ -1,0 +1,14 @@
+net: "models/flowers/train_val.prototxt"
+test_iter: 123
+test_interval: 100
+base_lr: 0.01
+lr_policy: "step"
+gamma: 0.1
+stepsize: 10000
+display: 20
+max_iter: 45000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "models/flowers/caffe_alexnet_train"
+solver_mode: GPU

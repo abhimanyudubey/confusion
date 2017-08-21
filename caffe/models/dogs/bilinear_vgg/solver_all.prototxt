@@ -1,0 +1,13 @@
+test_iter: 2145
+test_interval: 5000
+display: 100
+max_iter: 40000
+lr_policy: "step"
+stepsize: 20000
+gamma: 0.1
+base_lr: 0.001
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 10000
+snapshot_prefix: "examples/compact_bilinear/snapshot/ft_all"
+net: "examples/compact_bilinear/ft_all.prototxt"

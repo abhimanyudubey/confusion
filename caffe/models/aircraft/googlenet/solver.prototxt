@@ -1,0 +1,16 @@
+net: "models/nabirds/train_val.prototxt"
+test_iter: 67
+test_interval: 1000
+test_initialization: false
+display: 50
+average_loss: 40
+base_lr: 0.01
+lr_policy: "step"
+stepsize: 5000
+gamma: 0.25
+max_iter: 30000
+momentum: 0.9
+weight_decay: 0.0002
+snapshot: 1000
+snapshot_prefix: "models/bvlc_googlenet/bvlc_googlenet"
+solver_mode: GPU

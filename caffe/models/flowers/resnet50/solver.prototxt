@@ -1,0 +1,14 @@
+base_lr: 0.08
+display: 20
+max_iter: 40000
+lr_policy: "poly"
+power: 1
+momentum: 0.9
+weight_decay: 0.0001
+snapshot: 500
+snapshot_prefix: "resnet50_flwr"
+random_seed: 0
+net: "train.prototxt"
+iter_size: 12
+test_iter: 614
+test_interval: 100

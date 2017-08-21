@@ -1,0 +1,16 @@
+net: "examples/cifar10/cifar10_full_train_test.prototxt"
+test_iter: 100
+test_interval: 1000
+base_lr: 0.001
+momentum: 0.9
+weight_decay: 0.004
+lr_policy: "multistep"
+gamma: 0.1
+stepvalue: 200000
+stepvalue: 220000
+stepvalue: 240000
+display: 200
+max_iter: 260000
+snapshot: 200000
+snapshot_prefix: "examples/cifar10/cifar10_full"
+solver_mode: GPU

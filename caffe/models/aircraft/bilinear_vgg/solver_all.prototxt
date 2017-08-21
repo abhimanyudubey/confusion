@@ -1,0 +1,13 @@
+test_iter: 3333
+test_interval: 1000
+display: 100
+max_iter: 20000
+lr_policy: "step"
+stepsize: 20000
+gamma: 0.25
+base_lr: 0.001
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 10000
+snapshot_prefix: "snapshots/nabirds_bilinear"
+net: "./models/nabirds/bilinear_vgg/train_val_all.prototxt"
