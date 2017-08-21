@@ -28,6 +28,7 @@ The script `train.py` provides a very easy and straightforward interface to trai
 Note that, before you train the network, the following layers constraints are satisfied in model and solver prototxts:
 - Data layer called `data`.
 - Label layer called `label`.
+- There are no spaces in the model name, it is one word.
 - Training performance metric (any monotonically increasing metric with performance would be fine, most commonly it's top-1 accuracy) called `accuracy_train` in the `TRAIN` phase, and duplicate layer `accuracy_test` for the `TEST` phase.
 - Training optimization metric (any monotonically decreasing metric with performance would be fine, most commonly it's Cross-Entropy) called `loss_train` in the `TRAIN` phase, and duplicate layer `loss_test` for the `TEST` phase.
 - Similar metric as Accuracy/Top-5 called `top5_train` for `TRAIN` phase, and `top5_test` for `TEST` phase.
