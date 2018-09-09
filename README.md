@@ -121,17 +121,7 @@ Confusion Loss can be added on execution in a manner similar to supplying parame
 --confusion '{"l1" : 1, "l2": 0.005}'
 ```
 
-Note that by default the type of confusion that will be applied is pairwise. To use entropic confusion instead, add the argument `--entropic` to the command. Please make sure to adjust the loss weights accordingly. The optimal range of operation for pairwise loss is 0.1N to 0.2N (where N is the number of classes), and for entropic is 0.1-0.5 (tuning may be required, but is fairly robust to hyperparameter value). A sample entropic confusion command is:
-
-```
-./train.py --model /path/to/model \
---solver /path/to/solver \
---log_directory /path/to/log/directory \
---snapshot /path/to/snapshot \
---gpu 0 \
---confusion '{"l1" : 0.001, "l2": 0.05}'
---entropic
-```
+Please make sure to adjust the loss weights accordingly. The optimal range of operation for pairwise loss is 0.1N to 0.2N (where N is the number of classes).
 
 ## Feature Extraction in Caffe
 
