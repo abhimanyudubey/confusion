@@ -1,4 +1,15 @@
-# Interfaces for Confusion Classifiers
+# Pairwise Confusion for Fine-Grained Visual Classification
+
+This repository implements the PyTorch and Caffe code for the ECCV 2018 Paper "Pairwise Confusion for Fine-Grained Visual Classification". For more details on how to use pairwise confusion, please see the paper [here](https://arxiv.org/abs/1705.08016). If you use our code for your research, please use the following BibTeX entry:
+```
+@InProceedings{Dubey_2018_ECCV,
+author = {Dubey, Abhimanyu and Gupta, Otkrist and Guo, Pei and Raskar, Ramesh and Farrell, Ryan and Naik, Nikhil},
+title = {Pairwise Confusion for Fine-Grained Visual Classification},
+booktitle = {The European Conference on Computer Vision (ECCV)},
+month = {September},
+year = {2018}
+}
+```
 
 ## PyTorch Confusion
 
