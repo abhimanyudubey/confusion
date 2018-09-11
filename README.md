@@ -11,11 +11,12 @@ year = {2018}
 }
 ```
 
-## PyTorch Confusion
+## PyTorch
 
 Simply include `confusion_pytorch` using `import confusion_pytorch`, and add the requisite loss. Check source at `confusion_pytorch/__init__.py` for details.
 
-## Caffe Confusion - Prerequisites
+## Caffe 
+### Prerequisites
 The following dependencies must be satisfied for proper functionality:
 - [Caffe](https://github.com/BVLC/caffe) at `CAFFE_ROOT`. Note: for feature extraction, you must use the version of Caffe available [here](https://github.com/abhimanyudubey/caffe) (this version is exactly updated with the BVLC Caffe, with a couple of edits to HDF5 Output Layers, and is straightforward to compile).
 - Python dependencies include `matplotlib`, `h5py`, `lmdb`, `tqdm`. Install these by running:
@@ -32,7 +33,7 @@ To view help on a specific task, choose the related interface:
 - [Feature Extraction](#feature-extraction-in-caffe)
 - [t-SNE Visualization](#t-sne-visualization)
 
-## Training Networks in Caffe
+### Training Networks
 The script `train.py` provides a very easy and straightforward interface to train neural networks using Caffe. 
 
 ### Architecture Requirements in Prototxt Files
